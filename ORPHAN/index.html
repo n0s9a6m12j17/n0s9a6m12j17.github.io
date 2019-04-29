@@ -1,0 +1,141 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>𝑆𝑜𝑢𝑙.</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+  <!-- 
+    // This is a hidden script for a music player at the bottom of the page //
+  <`script src="wavesurfer.min.js"></`script>
+  <`script>
+    document.addEventListener('DOMContentLoaded', () => {
+      var wavesurfer = WaveSurfer.create({
+        container: '#waveform',
+        waveColor: '#b0b0fc',
+        progressColor: '#d19eff',
+        hideScrollbar: 'true',
+        barWidth: '1',
+        barHeight: '2',
+        height: '50',
+        cursorColor: '#813f9b'
+      });
+
+      wavesurfer.load('bgm.mp3');
+
+      wavesurfer.setVolume(.0) // used to be .2 volume // 
+
+      wavesurfer.on('ready', function() {
+        wavesurfer.play();
+      });
+    })
+  </`script> 
+  -->
+
+</head>
+
+<body>
+
+  <!-- SIDEBAR -->
+  <div class="sidenav" id="sidebar">
+    <div class="container">
+      <div id="sidebar-content" align="center">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="images/me.png" id="portrait" style="width:100px;" align="center"></img>
+        <p align="center">..why..are you here..</p>
+        <div hidden class="line-separator" align="center"></div> <!-- This is a hidden line separating avatar from title underneath it -->
+        <h4>8978842849242</h4>
+        <div class="row" id="music-stuff">
+          <div class="col-md-6">
+            <ul id="likes-left">
+              <li class="likes-item"><a href="https://www.youtube.com/watch?v=UBXTw9jBZdg" target="_blank">Amazing</a></li>
+              <li class="likes-item"><a href="https://www.youtube.com/watch?v=iDdd746LEGU" target="_blank">A</a></li>
+              <li class="likes-item"><a href="https://www.youtube.com/watch?v=WdVvuetyHCM" target="_blank">No Wok</a></li>
+              <li class="likes-item"><a href="https://www.youtube.com/watch?v=Tc1Iq3G0hI0" target="_blank">Prescription</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul id="likes-right">
+              <li class="likes-item"><a href="https://www.youtube.com/watch?v=zlcpLLJz1J8" target="_blank">絶対彼女</a></li>
+              <li class="likes-item"><a href="https://www.youtube.com/watch?v=sf-x8nqA-cA" target="_blank">Clarity</a></li>
+              <li class="likes-item"><a href="https://www.youtube.com/watch?v=h_Wu6lI-42w" target="_blank">Do You Wanna Get High</a></li>
+              <li class="likes-item"><a href="https://www.youtube.com/watch?v=OUlsTuG39O0" target="_blank">Answer</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="line-separator" align="center"></div>
+        <div id="other-links">
+          <h4>Some locations..</h4>
+          <ul id="other-links-list" align="center">
+            <li><a href="https://myanimelist.net/" target="_blank"><img src="images/mal.png" style="width:25px;"></img></a></li>
+            <li><a href="https://play.esea.net/users/" target="_blank"><img src="images/esea.png" style="width:25px;"></img></a></li>
+            <li><a href="https://www.dotabuff.com/players/" target="_blank"><img src="images/dota.png" style="width:25px;"></img></a></li>
+            <li><a href="https://na.op.gg/" target="_blank"><img src="images/lol.png" style="width:25px;"></img></a></li>
+            <li><a href="https://www.reddit.com" target="_blank"><img src="images/reddit.png" style="width:25px;"></img></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" style="width:25px;"></img></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- MAIN CONTENT -->
+  <div id="about">
+    <img onclick="openNav()" src="images/about.png"></img>
+  </div>
+  <video playsinline autoplay unmuted loop src="https://files.catbox.moe/kv6ikw.mp4" id="bgvid"></video>
+  <div class="vertical-center">
+    <div class="container" id="content">
+      <div id="toprow" align="center">
+        <a href="https://twitter.com/pathselector" target="_blank"><img src="images/twitter.png" style="width:50px;height:50px;"></img>
+        </a>
+        <a class="tooltips_top" href="#"><img src="images/discord.png" style="width:50px;height:50px;"></img><span>sleigh#0501</span>
+        </a>
+        <a href="https://github.com" target="_blank"><img src="images/github.png" style="width:50px;height:50px;"></img>
+        </a>
+        <a href="https://curiouscat.me" target="_blank"><img src="images/cat.png" style="width:50px;height:50px;"></img>
+        </a>
+      </div>
+      <div id="middlerow" align="center">
+        <h1>⠀⠀⠀⠀⠀</h1>
+      </div>
+      <div id="bottomrow" align="center">
+        <a href="http://steamcommunity.com" target="_blank"><img src="images/steam.png" style="width:50px;height:50px;"></img>
+        </a>
+        <a class="tooltips_bot" href="#"><img src="images/bnet.png" style="width:50px;height:50px;"></img><span>𝑤𝘩𝑦..</span>
+        </a>
+        <a href="https://twitch.tv" target="_blank"><img src="images/twitch.png" style="width:50px;height:50px;"></img>
+        </a>
+        <a href="https://amazon.com" target="_blank"><img src="images/amazon.png" style="width:50px;height:50px;"></img>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="waveform"></div>
+
+
+
+
+
+
+  <script>
+    /* Set the width of the side navigation to 250px */
+    function openNav() {
+      document.getElementById("sidebar").style.width = "400px";
+    }
+
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+      document.getElementById("sidebar").style.width = "0";
+    }
+  </script>
+</body>
+
+</html>
