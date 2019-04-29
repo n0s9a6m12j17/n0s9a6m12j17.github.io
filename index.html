@@ -1,0 +1,75 @@
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>(๑╹ڡ╹)╭ ～ ♡</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <div id="splash" class="container-fluid">
+    <div id="splashtitle">
+      <p class="text-center lead shadowtext">アレクサ//うふふ</p>
+    </div>
+
+    <div id="footer" class="container">
+      <a href="#"><img src="images/me.jpg" id="portrait"></img></a>
+      <a href="https://twitter.com/ufufufuru" target="_blank"><img src="images/twitter.png"</img></a>
+      <a href="https://github.com/ufufuru" target="_blank"><img src="images/github.png"</img></a>
+      <a href="https://twitch.tv/ufufuru" target="_blank"><img src="images/twitch.png"</img></a>
+      <a href="https://steamcommunity.com/id/ufufuru" target="_blank"><img src="images/steam.png"</img></a>
+      <a href="#" class="tooltips"><img src="images/discord.png"</img><span>Alexa#6017</span></a>
+    </div>
+  </div>
+  <div id="about" class="container-fluid">
+    <img src="images/up.png" alt="" id="top" align="center">
+
+    <div id="about-content" align="center">
+      <img src="images/me.png" alt="" id="portrait-large" align="center">
+      <p class="lead">Hi! My name is Alexa and I'm a design student focusing on web and UI design and part-time attention succubus. I'm a filthy weeaboo and skeleton jazz warrior, and I play a lot of Final Fantasy XIV, Tekken, and some other awful games like CSGO and
+        Dota. I have a cat named Yuri, a Yokai Watch in real life, and no friends in real life. I think I might be gay too? Not sure. This is all silly stuff because I'm a failure with nothing exciting or worthy of showing anyone. Maybe one day I'll have
+        something to show you guys. Bye. I love you.</p>
+    </div>
+
+  </div>
+
+
+
+  <script>
+    $('html').mousemove(function(e) {
+      var rXP = (e.pageX - this.offsetLeft - $(this).width() / 2);
+      var rYP = (e.pageY - this.offsetTop - $(this).height() / 2);
+      $('.shadowtext').css('text-shadow', +rYP / 10 + 'px ' + rXP / 80 + 'px rgba(57, 237, 255, 0.62), ' + rYP / 8 + 'px ' + rXP / 60 + 'px rgba(255, 103, 253, 0.61), ' + rXP / 70 + 'px ' + rYP / 12 + 'px rgba(92, 255, 128, 0.64)');
+    });
+  </script>
+  <script>
+    $('#top').click(function() {
+      $("html, body").animate({
+        scrollTop: 0
+      }, "slow");
+      return false;
+    });
+  </script>
+  <script>
+    $('#portrait').click(function() {
+
+      var WH = $(window).height();
+      var SH = $('body').prop("scrollHeight");
+      $('html, body').stop().animate({
+        scrollTop: SH - WH
+      }, 1000);
+      return false;
+
+    });
+  </script>
+
+</body>
+
+</html>

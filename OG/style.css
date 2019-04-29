@@ -1,0 +1,237 @@
+/*Makes video background fullscreen and below everything else*/
+html, body {
+  height: 100%;
+}
+
+@font-face {
+ font-family: 'Osaka';
+ src: url('Osaka.ttf') format('truetype');
+ }
+
+video#bgvid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(polina.jpg) no-repeat;
+  background-size: cover;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one <img draggable="false" class="emoji" alt="🙂" src="https://s.w.org/images/core/emoji/72x72/1f642.png">       */
+  display: flex;
+  align-items: center;
+}
+
+#content {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 400px;
+}
+
+ul {
+  display: inline;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+a {
+  padding: 0px 10px 0px 10px;
+}
+
+h1 {
+  color: white;
+  font-size: 100px;
+  font-family: 'Osaka';
+  font-weight: bold;
+}
+
+#waveform {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#about {
+  position: absolute;
+}
+
+#about:hover {
+  cursor: pointer;
+}
+/*TOOLTIPS*/
+a.tooltips_top {
+  position: relative;
+  display: inline;
+  color: #000000;
+  text-decoration: none;
+}
+
+a.tooltips_top span {
+  position: absolute;
+  width: 211px;
+  color: #FFFFFF;
+  background: rgba(0,0,0,0.3);
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 6px;
+  border: 1px solid 000000;
+  font-family: "Osaka";
+  font-size: 28px
+  text-shadow: 0px 0px 0px #000000;
+  color: #FFFFFF
+}
+a.tooltips_top span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  width: 0; height: 0;
+  border-top: 8px solid #000000;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+a:hover.tooltips_top span {
+  visibility: visible;
+  bottom: 60px;
+  left: 5%;
+  margin-left:-76px;
+  z-index: 999;
+}
+
+a.tooltips_bot {
+  position: relative;
+  display: inline;
+  color: #000000;
+  text-decoration: none;
+}
+
+a.tooltips_bot span {
+  position: absolute;
+  width: 211px;
+  color: #FFFFFF;
+  background: rgba(0,0,0,0.3);
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 6px;
+  border: 1px solid 000000;
+  font-family: "Osaka";
+  font-size: 28px
+  text-shadow: 0px 0px 0px #000000;
+  color: #FFFFFF
+}
+a.tooltips_bot span:after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -8px;
+  width: 0; height: 0;
+  border-bottom: 8px solid #000000;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+a:hover.tooltips_bot span {
+  visibility: visible;
+  top: 65px;
+  left: 7%;
+  margin-left:-76px;
+  z-index: 999;
+}
+
+
+/*SIDEBAR*/
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #0f2838; /* Black*/
+    overflow: hidden; /* Disable horizontal scroll */
+    padding-top: 40px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    color: white;
+    font-family: "Osaka";
+}
+
+.sidenav a {
+  text-decoration: none;
+  color: #cccccc;
+  display: block;
+  transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: white;
+    text-decoration: underline;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: -30;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#sidebar-content {
+  padding: 10px 10px 20px 10px;
+  font-size: 12px;
+}
+
+#sidebar-content p {
+  padding-bottom: 10px;
+}
+
+#portrait {
+  padding-bottom: 30px;
+}
+
+.line-separator{
+  height: 1px;
+  background: #27ab8b;
+  width: 200px;
+}
+
+.sidenav h4 {
+  padding-top: 20px;
+  font-size: 16px
+}
+
+#music-stuff {
+  padding-bottom: 1px;
+}
+
+#other-links-list {
+  padding-left: 0px;
+}
+
+#other-links-list li {
+  display: inline-block;
+}
+
+#other-links h4 {
+  padding-bottom: 20px;
+}
