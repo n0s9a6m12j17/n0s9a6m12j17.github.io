@@ -172,7 +172,7 @@ a:hover.tooltips_bot span {
     padding-top: 40px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
     color: white;
-    font-family: "Osaka";
+    /* font-family: "Osaka"; */
 }
 
 .sidenav a {
@@ -190,7 +190,7 @@ a:hover.tooltips_bot span {
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
     position: absolute;
-    top: -30;
+    top: -9;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
@@ -198,7 +198,7 @@ a:hover.tooltips_bot span {
 
 #sidebar-content {
   padding: 10px 10px 20px 10px;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 #sidebar-content p {
